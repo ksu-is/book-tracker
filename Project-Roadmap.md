@@ -8,7 +8,7 @@
 - [x] Edit the 'README.md' file and commit changes.
 - [x] Find ONE existing Python code base related your project idea.
 - [x] Evaluate the code, run it, and summarize findings in 'Project-Roadmap.md'
-** Sprint 2
+## Sprint 2
 - [ ] Make small updates and commit changes.
 - [ ] Commit at least 6 meaningful code changes.
 - [ ] Provide 2 URLs of commits.
