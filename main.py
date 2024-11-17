@@ -34,3 +34,14 @@ def add_books():
             print(book,"added to 'Other'")
         else:
             print("Category does not exist. Try another.")
+
+# function to view books that have been tracked
+def view_books():
+     print("\nBooks In Your Library")
+     print(to_read)
+     print(currently_reading)
+     print(read)
+
+category()
+add_books()
+view_books()
