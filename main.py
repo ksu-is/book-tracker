@@ -58,6 +58,7 @@ def monthly_stats():
      date = input("What is today's date?: ")
      if date in range[1/1:1/31]:
           monthly_stats.append(date)
+          
      
      
 
@@ -66,5 +67,6 @@ category()
 add_books()
 view_books()
 monthly_stats()
+
 
      
