@@ -2,16 +2,15 @@
 # function to choose a category    
 def category():
     category_input = input("Choose a category (Want to Read, Currently Reading, Read): ")
-    if category_input == 'Want to Read':
-        print("Want to Read: ")
-    elif category_input == 'Currently Reading':
-        print("Currently Reading: ")
-    elif category_input == 'Read: ':
-        print("Read: ")
+    if category_input is 'Want to Read':
+        print("Want to Read:",book_title_author)
+    elif category_input is 'Currently Reading':
+        print("Currently Reading:",book_title_author)
+    elif category_input is 'Read':
+        print("Read:",book_title_author)
     else:
         print("This category does not exist. Try again")
-    
-    
+
 
 # function to print books title and author  
 def book_title_author():
