@@ -12,7 +12,7 @@
 - [x] Make small updates and commit changes.
 - [ ] Commit at least 6 meaningful code changes.
 - [ ] Provide 2 URLs of commits.
-- [ ] Track progress in 'Project-Roadmap.md'.
+- [x] Track progress in 'Project-Roadmap.md'.
 - [ ] Provide 1 URL to a commit done in 'Project-Roadmap.md'.
 ## Sprint 3 
 - [ ] Continue coding, refining, and testing.
