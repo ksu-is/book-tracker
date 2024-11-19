@@ -4,7 +4,7 @@ currently_reading = []
 read = []
 other = []
 dates = []
-monthly_stats = []
+monthly_data = [] #start/end dates stored
 
 # function to choose a category
 def category():
@@ -52,21 +52,22 @@ def view_books():
      print("Currently Reading:",currently_reading)
      print("Read:",read)
 
-def monthly_stats():
-     print("\nMonthly Stats")
-     print()
-     date = input("What is today's date?: ")
-     if date in range[1/1:1/31]:
-          monthly_stats.append(date)
-          
-     
-     
+# function to confirm date
+def chosen_date(month, day):
+     months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August','September','October','November','December']
+     day_in_month = [31,29,31,30,31,30,31,31,30,31,30,31]
+     if month in months:
+          months_index = month.index(month)
+          amount_of_days = day_in_month[months_index]
+          return 1 <= day <= amount_of_days
+     return False
+
+month = input("What month: ")
+day = input("What day?: ")
 
 # calling the functions
 category()
 add_books()
 view_books()
-monthly_stats()
-
-
+chosen_date(month, day)
      
