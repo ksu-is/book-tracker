@@ -10,10 +10,10 @@
 - [x] Evaluate the code, run it, and summarize findings in 'Project-Roadmap.md'
 ## Sprint 2
 - [x] Make small updates and commit changes.
-- [ ] Commit at least 6 meaningful code changes.
-- [ ] Provide 2 URLs of commits.
+- [x] Commit at least 6 meaningful code changes.
+- [x] Provide 2 URLs of commits.
 - [x] Track progress in 'Project-Roadmap.md'.
-- [ ] Provide 1 URL to a commit done in 'Project-Roadmap.md'.
+- [x] Provide 1 URL to a commit done in 'Project-Roadmap.md'.
 ## Sprint 3 
 - [ ] Continue coding, refining, and testing.
 - [ ] Show additional progress.
