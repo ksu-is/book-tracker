@@ -4,7 +4,7 @@ currently_reading = []
 read = []
 other = []
 dates = []
-monthly_data = [] #start/end dates stored
+completed_books = []
 
 # function to choose a category
 def category():
@@ -18,7 +18,8 @@ def category():
         print("Other")
         return input("Choose a category: ")
 
-# function to add a book to chosen category    
+# function to add a book to chosen category  
+book = input("Enter book title and author: ")  
 def add_books():
         while True:
             chosen_category = input("Enter your chosen category: ")
@@ -41,9 +42,9 @@ def add_books():
             elif chosen_category == "Other":
                 other.append(book)
                 print(book,"added to 'Other'")
-            else:
-                if chosen_category and book == 'q':
-                     break
+            elif chosen_category == 'q':
+                if book == 'q':
+                    break
 
 # function to view books that have been tracked
 def view_books():
@@ -53,21 +54,39 @@ def view_books():
      print("Read:",read)
 
 # function to confirm date
+months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August','September','October','November','December']
+day_in_month = [31,29,31,30,31,30,31,31,30,31,30,31]
 def chosen_date(month, day):
-     months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August','September','October','November','December']
-     day_in_month = [31,29,31,30,31,30,31,31,30,31,30,31]
      if month in months:
           months_index = month.index(month)
           amount_of_days = day_in_month[months_index]
-          return 1 <= day <= amount_of_days
+          return 1 <= int(day) <= amount_of_days
      return False
 
-month = input("What month: ")
-day = input("What day?: ")
+# start date function
+print("Enter start date: ")
+while True:
+     start_month = input("Month: ")
+     start_day = input("Day: ")
+     if chosen_date(start_month, start_day):
+          break
+
+
+# end date function
+print("Enter end date: ")
+while True:
+     end_month = input("Month: ")
+     end_day = input("Day: ")
+     if chosen_date(end_month, end_day):
+          break
+
+# storing end dates and start dates
+completed_books.append(start_month)
+completed_books.append(start_day)
+completed_books.append(end_month)
+completed_books.append(end_day)
 
 # calling the functions
 category()
 add_books()
 view_books()
-chosen_date(month, day)
-     
