@@ -1,0 +1,18 @@
+#Example output:
+
+print("\nBook Tracker")
+print("\nCategory:")
+print()
+print("1. Want to Read")
+print("2. Currently Reading")
+print("3. Read")
+print("4. Main Menu")
+print("5. View Stats")
+print("\nChoose a category (1-5): 3")
+print("Enter Book title and author: Funny Story by Emily Henry ")
+print("Enter start date for 'Funny Story by Emily Henry': ")
+print("Start Month: April")
+print("Start Day: 15")
+print("End Month: April")
+print("End Day: 18")
+print("'Funny Story by Emily Henry' added to 'Read', read from April 15 - April 18")
