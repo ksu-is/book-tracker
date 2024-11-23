@@ -15,6 +15,6 @@
 - [x] Track progress in 'Project-Roadmap.md'.
 - [x] Provide 1 URL to a commit done in 'Project-Roadmap.md'.
 ## Sprint 3 
-- [ ] Continue coding, refining, and testing.
-- [ ] Show additional progress.
-- [ ] Create an introductory powerpoint slide.
+- [x] Continue coding, refining, and testing.
+- [x] Show additional progress.
+- [x] Create an introductory powerpoint slide.
